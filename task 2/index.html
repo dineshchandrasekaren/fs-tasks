@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unsplash Images</title>
+    <style>
+      .bg-image {
+        background-image: url("https://images.unsplash.com/photo-1752416505247-41c49cafce2c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyODYyMjF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTI2NzMwNzd8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080");
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      img:not([usemap="#image-map"]) {
+        width: 400px;
+      }
+      h4 {
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">&lt;</a>
+    <h1>
+      Task 2: Create a HTML page with image and use map/area tag to map
+      different parts.2.Use picture to add diffrent source for an image
+      tag(internal and inline)
+    </h1>
+    <h4>mark a drink and food</h4>
+    <img
+      src="https://images.unsplash.com/photo-1744439916846-2e8b0113d2db?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;q=80&amp;w=300"
+      usemap="#image-map"
+    />
+
+    <map name="image-map">
+      <area
+        target="_blank"
+        alt="drinks"
+        title="drinks"
+        href="https://unsplash.com/s/photos/drink"
+        coords="104,248,237,132"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="foods"
+        title="foods"
+        href="https://unsplash.com/s/photos/food"
+        coords="282,263,114,386"
+        shape="rect"
+      />
+    </map>
+    <p>Iced drink and pastry sit on a tray.</p>
+    <h4>style using attribute for img tag</h4>
+    <a
+      href="https://unsplash.com/photos/volcanic-landscape-under-a-dramatic-cloudy-sky-YwwUXa6NvX4"
+      target="_blank"
+      ><img
+        src="https://images.unsplash.com/photo-1750779940304-95eb48d09b5c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyODYyMjF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTI2NzMwNzd8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+        width="300"
+        alt="Volcanic landscape under a dramatic, cloudy sky."
+        title="Volcanic landscape under a dramatic, cloudy sky."
+      />
+      <p>Volcanic landscape under a dramatic, cloudy sky.</p>
+    </a>
+
+    <h4>inline style</h4>
+    <a
+      href="https://unsplash.com/photos/abstract-blue-cylindrical-forms-create-an-intriguing-composition-YaYRorKBqJI"
+      style="width: 200px"
+      target="_blank"
+      ><img
+        src="https://images.unsplash.com/photo-1752061567306-79d3db813164?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyODYyMjF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTI2NzMwNzd8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+        alt="Abstract, blue, cylindrical forms create an intriguing composition."
+        title="Abstract, blue, cylindrical forms create an intriguing composition."
+      />
+      <p>
+        Abstract, blue, cylindrical forms create an intriguing composition."
+        title="Abstract, blue, cylindrical forms create an intriguing
+        composition.
+      </p></a
+    >
+
+    <h4>background property</h4>
+    <div class="bg-image"></div>
+  </body>
+</html>
