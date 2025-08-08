@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM innerHTML & Style Changes</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  #target {
+    font-size: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+
+
+<p id="target">This is the original text.</p>
+
+<button onclick="changeText()">Change Text</button>
+<button onclick="changeColor()">Change Background</button>
+<button onclick="resetChanges()">Reset</button>
+
+<script>
+  let target = document.getElementById("target");
+
+  function changeText() {
+    target.innerHTML = "✅ The text has been changed using innerHTML!";
+  }
+
+  function changeColor() {
+    target.style.backgroundColor = "lightgreen";
+    target.style.color = "darkblue";
+  }
+
+
+  function resetChanges() {
+    target.innerHTML = "This is the original text.";
+    target.style.backgroundColor = "lightgray";
+    target.style.color = "black";
+  }
+</script>
+
+</body>
+</html>

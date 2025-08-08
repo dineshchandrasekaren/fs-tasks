@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Different HTML Layouts</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    color: #2c3e50;
+  }
+
+  .box {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .float-layout {
+    overflow: auto; 
+  }
+  .float-layout .box {
+    float: left;
+    width: 29.5%;
+    margin: 5px;
+  }
+
+  .flex-layout {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .flex-layout .box {
+    flex: 1;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Different HTML Layout Examples</h1>
+
+<h2>1. Float Layout</h2>
+<div class="float-layout">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+<h2>2. Flexbox Layout</h2>
+<div class="flex-layout">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+<h2>3. Grid Layout</h2>
+<div class="grid-layout">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borders, Outline & JavaScript Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h1, p, button {
+    margin-bottom: 15px;
+  }
+
+  .bordered {
+    border: 3px solid #3498db;
+    padding: 10px;
+  }
+
+  .outlined {
+    outline: 3px dashed #e74c3c; 
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1 class="bordered">Border Example Heading</h1>
+<p class="outlined">This is an example paragraph with an outline.</p>
+
+<button onclick="changeContent()">Click Me</button>
+
+<p id="demoText">change</p>
+
+<script>
+  function changeContent() {
+    let element = document.getElementById("demoText");
+    element.innerHTML = "The content has been changed";
+  }
+</script>
+
+</body>
+</html>
